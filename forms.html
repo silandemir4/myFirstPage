@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms Demo</title>
+</head>
+<body>
+  <h1>FORMS DEMO</h1>
+  <form action="/food" >
+    <label for="username">Kullanıcı Adı Giriniz:</label>
+    <input id="username" type="text" placeholder="Şilan" name="username">
+    <label for="password">Şifre Giriniz</label>
+    <input id="password" type="password" placeholder="*****" name="password">
+    <label for="color">Renk Seçiniz:</label>
+    <input id="color" type="color" name="color">
+    <label for="number">Sayı Giriniz:</label>
+    <input id="number" type="number" placeholder="number"><br>
+    
+    <button type="button">bu formu gönderme</button>
+    <input type="submit" value="gönder">
+    <button>Submit</button>
+    <h2>DAHA FAZLA İNPUT ÇEŞİDİ</h2>
+    <form action="/birds">
+        <input type="checkbox" name="tos" id="agree">
+        
+        <label for="agree">Kabul Ediyorum</label>
+
+        
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+            <button>Yolla</button>
+        </p>
+        <p>
+            <label for="animal">Favori hayvanınızı seçin..</label>
+            <select name="animal" id="animal">
+            <option value="fish">Balık</option>
+            <option value="bird" selected>Kuş</option>
+            <option value="cat">Kedi</option>
+            </p>
+        </select>
+        <p><label for="note">Özel istek</label>
+        <textarea name="note" id="note" cols="30" rows="10"></textarea></p>
+        <!--required zorunlu demek-->
+        <h2>Validstions</h2>
+        
+        <form action="/dummy">
+            <p>
+                <label for="">Url Girniz</label>
+                <input type="url" name="" id="">
+                <label for="first">İsim Girniz:</label>
+            <input type="text" name="first" id="first" required>
+            <label for="password">Şifre.</label>
+            <input type="password" name="passsword" id="password" minlength="5" maxlength="15">
+            <button>SUBMİT</button>
+        </p>
+        </form>
+        
+    </form>
+
+    
+    
+    
+    
+  </body>
+  </html>
